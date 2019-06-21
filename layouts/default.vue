@@ -31,7 +31,7 @@ export default {
   grid-template-columns: 1fr 2fr;
 
   .side {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
 
@@ -44,7 +44,7 @@ export default {
       height: 100%;
       background-image: url("/img/side_bg.jpg");
       background-position: 30% 0;
-      // background-attachment: fixed;
+      background-attachment: fixed;
       background-size: cover;
       background-repeat: no-repeat;
       filter: grayscale(70%) brightness(0.5);
@@ -53,9 +53,9 @@ export default {
     .logo {
       width: 60%;
       max-width: 300px;
-      position: absolute;
+      position: fixed;
       top: 40%;
-      left: 50%;
+      left: 18%;
       transform: translate(-50%, -50%);
 
       .avatar {

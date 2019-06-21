@@ -19,11 +19,10 @@ export default {
 <style lang="scss">
 .navigation {
   background-color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 40px;
   .nav-list {
-    position: fixed;
-    top: 20px;
-    right: 40px;
-
     a {
       padding: 5px 10px;
       margin: 0 10px;

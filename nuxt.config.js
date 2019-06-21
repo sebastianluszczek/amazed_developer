@@ -38,7 +38,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/scss/main.scss"],
+  css: [
+    "@/assets/scss/main.scss",
+    { src: "~/node_modules/highlight.js/styles/monokai.css", lang: "css" }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -57,7 +60,7 @@ export default {
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.md$/,
-        use: ["raw-loader"]
+        use: [{ loader: "raw-loader" }]
       });
     }
   },
