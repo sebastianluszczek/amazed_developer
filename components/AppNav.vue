@@ -31,7 +31,7 @@ export default {
       transition: 0.3s;
       border-bottom: 1px solid #fff;
 
-      &.nuxt-link-active {
+      &.nuxt-link-exact-active {
         border-bottom: 1px solid #333;
       }
     }

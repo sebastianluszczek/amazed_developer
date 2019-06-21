@@ -7,6 +7,23 @@
         <h1 class="light">Amazed</h1>
         <h1 class="bold">Developer</h1>
       </div>
+      <div class="footer">
+        <div class="socials">
+          <fa :icon="['fab', 'facebook']"/>
+          <fa :icon="['fab', 'twitter']"/>
+          <fa :icon="['fab', 'github']"/>
+          <fa :icon="['fab', 'linkedin']"/>
+        </div>
+        <p>
+          Coded by Sebastian Łuszczek with
+          <a href="https://vuejs.org/" target="_blank">Vue.js</a> +
+          <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
+        </p>
+        <p>
+          Hosted on
+          <a href="https://www.netlify.com/">Netlify</a>
+        </p>
+      </div>
     </div>
     <main>
       <nuxt/>
@@ -69,6 +86,8 @@ export default {
         color: #fff;
         font-family: Montserrat;
         font-weight: normal;
+        padding: 0;
+        margin: 0;
       }
 
       .light {
@@ -79,6 +98,28 @@ export default {
       .bold {
         font-weight: 600;
         font-size: 60px;
+      }
+    }
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      width: 33vw;
+      color: #fff;
+      text-align: center;
+
+      .socials {
+        font-size: 30px;
+
+        svg {
+          margin: 0 20px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
       }
     }
   }

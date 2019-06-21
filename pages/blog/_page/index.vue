@@ -1,9 +1,10 @@
 <template>
   <div :key="$route.params.post">
-    <div class="container">
+    <div class="blog-container">
       <div class="title">{{ attributes.title }}</div>
       <div class="subtitle">
         Published on {{attributes.ctime}}
+        <br>
         by {{ attributes.author }}
       </div>
       <div v-html="content" class="blog-content content markdown-body"></div>
@@ -42,20 +43,13 @@ export default {
 };
 </script>
 
-<style>
-.blog {
-  padding: 1em;
-}
-.blog header {
-  margin-bottom: 1em;
-}
-.blog .subtitle {
-  font-size: 1rem;
-}
-.blog-content >>> h1 {
-  font-size: 1.5rem;
-}
-blockquote {
-  margin-bottom: 1em;
+<style lang="scss">
+.blog-container {
+  width: 70%;
+  margin: 6rem auto;
+
+  .title {
+    font-size: 52px;
+  }
 }
 </style>

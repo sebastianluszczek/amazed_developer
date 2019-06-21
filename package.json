@@ -11,8 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "github-markdown-css": "^3.0.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-material-design-icons": "^1.0.4"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.5",

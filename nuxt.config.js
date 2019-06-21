@@ -29,7 +29,7 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/jpeg", href: "/img/amazedbear.jpeg" }]
+    link: [{ rel: "icon", type: "image/png", href: "/img/amazed_favicon.png" }]
   },
   /*
    ** Customize the progress-bar color
@@ -49,7 +49,27 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    "nuxt-fontawesome",
+    //OR like this
+    [
+      "nuxt-fontawesome",
+      {
+        component: "fa",
+        imports: [
+          //import whole set
+          {
+            set: "@fortawesome/free-solid-svg-icons",
+            icons: ["fas"]
+          },
+          {
+            set: "@fortawesome/free-brands-svg-icons",
+            icons: ["fab"]
+          }
+        ]
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */
