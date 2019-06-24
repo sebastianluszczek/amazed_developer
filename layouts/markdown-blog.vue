@@ -21,6 +21,7 @@ export default {
 <style lang="scss">
 .markdown-blog {
   width: 100%;
+  overflow: hidden;
   main {
     margin-top: 5rem;
     .container {

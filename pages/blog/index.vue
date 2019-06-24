@@ -7,10 +7,13 @@
       <nuxt-link :to="`/blog/${post.slug}`">
         <div v-if="post.cover_image"></div>
         <div class="column">
+          <div class="baner">
+            <img :src="post.avatar" alt class="baner-img">
+          </div>
           <h2 class="title">{{ post.title }}</h2>
           <p class="subtitle">{{ post.description }}</p>
           <div class="level">
-            <p class="small level-left">Published on {{ post.ctime }}</p>
+            <p class="small level-left">Published on {{ post.ctime.toString().slice(0, 24) }}</p>
           </div>
         </div>
       </nuxt-link>
@@ -41,6 +44,21 @@ export default {
     a {
       text-decoration: none;
       color: #333;
+    }
+
+    .baner {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+
+      .baner-img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
     }
   }
 }

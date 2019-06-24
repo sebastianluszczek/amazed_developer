@@ -1,12 +1,20 @@
 <template>
   <div :key="$route.params.post">
     <div class="blog-container">
-      <div class="title">{{ attributes.title }}</div>
-      <div class="subtitle">
-        Published on {{attributes.ctime}}
-        <br>
-        by {{ attributes.author }}
+      <div class="baner">
+        <div class="title-half">
+          <div class="title">{{ attributes.title }}</div>
+          <div class="subtitle">
+            Published on {{attributes.ctime.toString().slice(0, 24)}}
+            <br>
+            by {{ attributes.author }}
+          </div>
+        </div>
+        <div class="image-half">
+          <img :src="attributes.avatar" class="image">
+        </div>
       </div>
+
       <div v-html="content" class="blog-content content markdown-body"></div>
     </div>
   </div>
@@ -48,8 +56,29 @@ export default {
   width: 70%;
   margin: 6rem auto;
 
-  .title {
-    font-size: 52px;
+  .baner {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .title-half {
+      .title {
+        font-size: 52px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .image-half {
+      position: relative;
+
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+    }
   }
 }
 </style>

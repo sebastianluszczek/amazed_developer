@@ -5,6 +5,7 @@ description: Change the default behaviour of polkit in order to not list all the
 tags: polkit,javascript,permissions,centos
 ctime: 2019-05-24
 author: Sebastian Łuszczek
+avatar: https://source.unsplash.com/95YRwf6CNw8/1600x900
 ---
 
 ## The problem
