@@ -2,7 +2,7 @@
   <div class="navigation">
     <nav>
       <ul class="nav-list">
-        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/about">About</nuxt-link>
         <nuxt-link to="/blog">Blog</nuxt-link>
       </ul>

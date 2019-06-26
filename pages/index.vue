@@ -9,7 +9,11 @@
 </template>
 
 <script>
-export default {};
+  export default {
+    fetch ({ params, redirect }) {
+      redirect(301, '/blog')
+    }
+  }
 </script>
 
 <style>

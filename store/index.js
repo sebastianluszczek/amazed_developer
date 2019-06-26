@@ -1,10 +1,14 @@
 export const state = () => ({
-  bloglist: []
+  bloglist: [],
+  projectlist: []
 });
 
 export const mutations = {
-  set(state, list) {
-    state.bloglist = list;
+  setBlogList(state, posts) {
+    state.bloglist = posts;
+  },
+  setProjectList(state, projects) {
+    state.projectlist = projects;
   }
 };
 
@@ -17,11 +21,19 @@ export const actions = {
     so we can render the blog page in the right order and also
     navigate back to it
   */
-  async nuxtServerInit({ commit }) {
+  async nuxtServerInit({ commit, dispatch }) {
+    var articles = await require.context("~/articles/", false, /\.md$/);
+    let articlesList = await dispatch('prepareMarkdown', articles);
+    await commit("setBlogList", articlesList);
+
+    var projects = await require.context("~/projects/", false, /\.md$/);
+    let projList = await dispatch('prepareMarkdown', projects);
+    await commit("setProjectList", projList);
+  },
+
+  async prepareMarkdown({commit}, files) {
     const fm = require("front-matter");
-    var files = await require.context("~/articles/", false, /\.md$/);
-    var posts = files
-      .keys()
+    let posts = files.keys()
       .map(key => {
         var res = files(key);
         res.slug = key.slice(2, -3);
@@ -35,6 +47,6 @@ export const actions = {
       .sort((a, b) => {
         return a.ctime < b.ctime;
       });
-    await commit("set", posts);
+    return posts;
   }
 };
