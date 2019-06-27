@@ -96,7 +96,7 @@ export default {
       }
 
       .bold {
-        font-weight: 600;
+        font-family: Montserrat-Bold;
         font-size: 60px;
       }
     }

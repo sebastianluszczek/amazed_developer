@@ -1,5 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap&subset=latin-ext");
+//@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap&subset=latin-ext");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css");
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fonts/Montserrat-Bold.otf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Light.otf");
+}
 
 * {
   margin: 0;

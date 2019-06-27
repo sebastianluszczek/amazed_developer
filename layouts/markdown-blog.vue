@@ -1,5 +1,6 @@
 <template>
   <div class="markdown-blog">
+    <AppLogo></AppLogo>
     <AppNav/>
     <main>
       <nuxt/>
@@ -9,10 +10,12 @@
 
 <script>
 import AppNav from "@/components/AppNav";
+import AppLogo from "@/components/AppLogo";
 
 export default {
   components: {
-    AppNav
+    AppNav,
+    AppLogo
   }
 };
 </script>

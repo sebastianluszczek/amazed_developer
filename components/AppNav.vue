@@ -20,9 +20,10 @@ export default {
 .navigation {
   background-color: #fff;
   position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 0;
+  right: 0;
   .nav-list {
+    padding: 10px 40px;
     a {
       padding: 5px 10px;
       margin: 0 10px;
@@ -30,8 +31,9 @@ export default {
       color: #333;
       transition: 0.3s;
       border-bottom: 1px solid #fff;
+      font-weight: 600;
 
-      &.nuxt-link-exact-active {
+      &.nuxt-link-active {
         border-bottom: 1px solid #333;
       }
     }
