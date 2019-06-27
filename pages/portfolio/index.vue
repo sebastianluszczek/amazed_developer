@@ -17,6 +17,9 @@
           <div class="description">
             <h2 class="title">{{ post.title }}</h2>
             <p class="subtitle">{{ post.description }}</p>
+            <div class="tech_icons">
+              <img v-for="icon in (post.tech.split(','))" :key="icon" :src="`/icons/${icon}.png`" :alt="icon" class="tech_icon">
+            </div>
           </div>
         </nuxt-link>
       </div>
@@ -48,6 +51,7 @@
 
     .project-post {
       margin: 50px 20px;
+      border: 1px solid #aaa;
     }
 
     .post-content {
@@ -67,6 +71,21 @@
         }
       }
       .description {
+        position: relative;
+        height: 100%;
+        .tech_icons {
+          width: 100%;
+          text-align: right;
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          .tech_icon {
+            display: inline-block;
+            height: 48px;
+            padding: 0 5px;
+          }
+        }
+
 
       }
     }

@@ -1,14 +1,15 @@
 ---
-title: treehouse.com
-description: Projekt treningowy zakładający podejście RWD i wykożystanie Webpacka
-url: https://quirky-bose-31b298.netlify.com/
+title: EventSide
+published: true
+description: Strona firmowa napisana dla mojego brata
 ctime: 2019-06-26
-git: 
-img: /projects_img/treehouse.png
-tech: HTML5,JavaScript,SASS
+url: dachyluszczek.pl
+img: /projects_img/eventside.png
+tech: vuejs,graphql,mongo_db,nodejs
 ---
 
-# treehouse.com
+# EventSIDE
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sagittis justo. Etiam pretium luctus tellus eu sollicitudin. Maecenas varius eros non nisl imperdiet ultricies. Donec vulputate vestibulum tortor, quis faucibus nunc hendrerit vel. Nam quis aliquam ante. Aenean ullamcorper libero tellus, nec viverra erat tempus a. Morbi mattis ligula at dignissim malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus justo, luctus ut lorem id, commodo maximus lectus. Donec mi justo, tristique ac odio vitae, faucibus convallis lorem.
 

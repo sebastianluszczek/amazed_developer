@@ -1,6 +1,5 @@
 <template>
   <div class="markdown-blog">
-    <AppLogo></AppLogo>
     <AppNav/>
     <main>
       <nuxt/>
@@ -10,12 +9,10 @@
 
 <script>
 import AppNav from "@/components/AppNav";
-import AppLogo from "@/components/AppLogo";
 
 export default {
   components: {
-    AppNav,
-    AppLogo
+    AppNav
   }
 };
 </script>
@@ -25,6 +22,8 @@ export default {
 .markdown-blog {
   width: 100%;
   overflow: hidden;
+
+
   main {
     margin-top: 5rem;
     .container {

@@ -1,12 +1,11 @@
 ---
 title: DachyLuszczek.pl
-published: true
 description: Strona firmowa napisana dla mojego brata
-tags: HTML, SCSS, JavaScript, Webpack
-ctime: 2019-06-26
-author: Sebastian Łuszczek
 url: dachyluszczek.pl
+ctime: 2019-06-26
+git: 
 img: /projects_img/dachy-luszczek.png
+tech: JavaScript,SASS,HTML5,webpack
 ---
 
 # DachyLuszczek.pl

@@ -1,7 +1,6 @@
 <template>
   <div class="default">
     <div class="side">
-      <AppNav/>
       <div class="logo">
         <img src="/img/amazedbear.jpeg" alt class="avatar">
         <h1 class="light">Amazed</h1>
@@ -26,6 +25,7 @@
       </div>
     </div>
     <main>
+      <AppNav/>
       <nuxt/>
     </main>
   </div>
@@ -45,7 +45,15 @@ export default {
 <style lang="scss">
 .default {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.5fr;
+
+  .navigation {
+    width: 71.3%;
+  }
+
+  .app-logo {
+    display: none;
+  }
 
   .side {
     height: 100%;
@@ -72,7 +80,7 @@ export default {
       max-width: 300px;
       position: fixed;
       top: 40%;
-      left: 18%;
+      left: 15%;
       transform: translate(-50%, -50%);
 
       .avatar {
@@ -104,7 +112,7 @@ export default {
       position: fixed;
       bottom: 10px;
       left: 0;
-      width: 33vw;
+      width: 28vw;
       color: #fff;
       text-align: center;
 
@@ -125,10 +133,10 @@ export default {
   }
 
   main {
-    margin-top: 5rem;
+    position: relative;
     .container {
       width: 80%;
-      margin: 0 auto;
+      margin: 5rem auto;
     }
   }
 }

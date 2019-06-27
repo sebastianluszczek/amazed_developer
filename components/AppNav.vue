@@ -1,5 +1,6 @@
 <template>
   <div class="navigation">
+    <AppLogo></AppLogo>
     <nav>
       <ul class="nav-list">
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
@@ -11,8 +12,12 @@
 </template>
 
 <script>
+  import AppLogo from "@/components/AppLogo";
+
 export default {
-  name: "app_nav"
+  name: "app_nav", components: {
+  AppLogo
+  }
 };
 </script>
 
@@ -22,8 +27,15 @@ export default {
   position: fixed;
   top: 0;
   right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+height: 5rem;
+  box-shadow:  3px 3px 10px #eee;
   .nav-list {
     padding: 10px 40px;
+
     a {
       padding: 5px 10px;
       margin: 0 10px;

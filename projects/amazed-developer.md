@@ -1,14 +1,14 @@
 ---
-title: treehouse.com
-description: Projekt treningowy zakładający podejście RWD i wykożystanie Webpacka
-url: https://quirky-bose-31b298.netlify.com/
+title: AmazedDeveloper
+description: Portfolio i Blog napisane w Nuxcie
 ctime: 2019-06-26
-git: 
-img: /projects_img/treehouse.png
-tech: HTML5,JavaScript,SASS
+url: https://brave-shaw-f5e5a1.netlify.com
+img: /projects_img/amazed-developer.png
+tech: vuejs,nuxt,markdown
 ---
 
-# treehouse.com
+# AmazedDeveloper
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sagittis justo. Etiam pretium luctus tellus eu sollicitudin. Maecenas varius eros non nisl imperdiet ultricies. Donec vulputate vestibulum tortor, quis faucibus nunc hendrerit vel. Nam quis aliquam ante. Aenean ullamcorper libero tellus, nec viverra erat tempus a. Morbi mattis ligula at dignissim malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus justo, luctus ut lorem id, commodo maximus lectus. Donec mi justo, tristique ac odio vitae, faucibus convallis lorem.
 

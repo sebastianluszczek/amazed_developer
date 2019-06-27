@@ -17,9 +17,9 @@
 
 <style lang="scss">
   .app-logo {
-    padding: 10px 40px;
+    padding: 5px 40px;
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 
