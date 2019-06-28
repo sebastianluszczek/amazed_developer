@@ -3,16 +3,18 @@
     <AppNav/>
     <main>
       <nuxt/>
+      <AppFooter/>
     </main>
   </div>
 </template>
 
 <script>
 import AppNav from "@/components/AppNav";
+import AppFooter from "@/components/AppFooter";
 
 export default {
   components: {
-    AppNav
+    AppNav, AppFooter
   }
 };
 </script>
@@ -29,6 +31,11 @@ export default {
     .container {
       width: 80%;
       margin: 0 auto;
+    }
+    
+    .footer {
+      background-color: #333;
+      padding: 2rem 2rem 1rem;
     }
   }
   .markdown-body {

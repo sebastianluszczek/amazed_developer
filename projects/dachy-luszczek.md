@@ -1,8 +1,8 @@
 ---
 title: DachyLuszczek.pl
 description: Strona firmowa napisana dla mojego brata
-url: dachyluszczek.pl
 ctime: 2019-06-26
+url: dachyluszczek.pl
 git: 
 img: /projects_img/dachy-luszczek.png
 tech: JavaScript,SASS,HTML5,webpack

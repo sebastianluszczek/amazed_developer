@@ -1,10 +1,11 @@
 ---
 title: AmazedDeveloper
-description: Portfolio i Blog napisane w Nuxcie
+description: Portfolio i Blog napisane w Nuxt.js
 ctime: 2019-06-26
 url: https://brave-shaw-f5e5a1.netlify.com
+git:
 img: /projects_img/amazed-developer.png
-tech: vuejs,nuxt,markdown
+tech: vuejs,nuxt,markdown,SASS
 ---
 
 # AmazedDeveloper

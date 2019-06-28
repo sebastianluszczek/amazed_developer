@@ -6,23 +6,7 @@
         <h1 class="light">Amazed</h1>
         <h1 class="bold">Developer</h1>
       </div>
-      <div class="footer">
-        <div class="socials">
-          <fa :icon="['fab', 'facebook']"/>
-          <fa :icon="['fab', 'twitter']"/>
-          <fa :icon="['fab', 'github']"/>
-          <fa :icon="['fab', 'linkedin']"/>
-        </div>
-        <p>
-          Coded by Sebastian Łuszczek with
-          <a href="https://vuejs.org/" target="_blank">Vue.js</a> +
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
-        </p>
-        <p>
-          Hosted on
-          <a href="https://www.netlify.com/">Netlify</a>
-        </p>
-      </div>
+      <app-footer></app-footer>
     </div>
     <main>
       <AppNav/>
@@ -33,10 +17,12 @@
 
 <script>
 import AppNav from "@/components/AppNav";
+import AppFooter from "@/components/AppFooter";
 
 export default {
   components: {
-    AppNav
+    AppNav,
+    AppFooter
   }
 };
 </script>
@@ -74,6 +60,10 @@ export default {
       background-repeat: no-repeat;
       filter: grayscale(70%) brightness(0.5);
     }
+    .footer {
+      position: fixed;
+      width: 28%;
+    }
 
     .logo {
       width: 60%;
@@ -106,28 +96,6 @@ export default {
       .bold {
         font-family: Montserrat-Bold;
         font-size: 60px;
-      }
-    }
-    .footer {
-      position: fixed;
-      bottom: 10px;
-      left: 0;
-      width: 28vw;
-      color: #fff;
-      text-align: center;
-
-      .socials {
-        font-size: 30px;
-
-        svg {
-          margin: 0 20px;
-        }
-      }
-
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
       }
     }
   }

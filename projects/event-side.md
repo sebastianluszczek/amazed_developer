@@ -1,11 +1,12 @@
 ---
 title: EventSide
 published: true
-description: Strona firmowa napisana dla mojego brata
+description: Aplikacja FullStack pozwalająca na rejestracje/logowanie (JWT), oraz tworzenie i bookowanie eventów (CRUD) 
 ctime: 2019-06-26
-url: dachyluszczek.pl
+git: https://github.com/sebastianluszczek/graphql_events_app
+url: 
 img: /projects_img/eventside.png
-tech: vuejs,graphql,mongo_db,nodejs
+tech: vuejs,apollo,graphql,mongo_db,nodejs
 ---
 
 # EventSIDE

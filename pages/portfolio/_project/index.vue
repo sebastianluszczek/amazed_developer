@@ -1,15 +1,18 @@
 <template>
-  <div :key="$route.params.post">
-    <div class="blog-container">
-      <div class="baner">
-        <div class="title-half">
-          <div class="title">{{ attributes.title }}</div>
-        </div>
-        <div class="image-half">
-          <img :src="attributes.img" class="image">
+  <div :key="$route.params.post" class="project-page">
+    <div class="baner">
+      <div class="title-half">
+        <div class="title">{{ attributes.title }}</div>
+        <div class="links">
+          <a :href="attributes.url" v-if="attributes.url" target="_blank"><fa :icon="['fas', 'globe']"/></a>
+          <a :href="attributes.git" v-if="attributes.git" target="_blank"><fa :icon="['fab', 'github']"/></a>
         </div>
       </div>
-
+      <div class="image-half">
+        <img :src="attributes.img" class="image">
+      </div>
+    </div>
+    <div class="blog-container">
       <div v-html="content" class="blog-content content markdown-body"></div>
     </div>
   </div>
@@ -49,20 +52,33 @@
 </script>
 
 <style lang="scss">
-  .blog-container {
-    width: 70%;
-    margin: 6rem auto;
-
+  .project-page {
     .baner {
-      width: 100%;
-      height: 500px;
+      width: 100vw;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 2fr 3fr;
+      padding-top: 1rem;
 
       .title-half {
+        padding: 2rem 3rem;
+        text-align: right;
+        position: relative;
         .title {
           font-size: 52px;
           margin-bottom: 50px;
+        }
+        .links {
+          font-size: 40px;
+          position: absolute;
+          bottom: 0;
+          right: 2rem;
+          a {
+            color: #333;
+            text-decoration: none;
+          }
+          svg {
+            margin: 10px;
+          }
         }
       }
 
@@ -70,13 +86,20 @@
         position: relative;
 
         .image {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
+          display: block;
+          /*position: absolute;*/
+          /*top: 0;*/
+          /*left: 0;*/
+          width: 100%;
+          height: auto;
           z-index: 2;
         }
       }
     }
+    .blog-container {
+      width: 70%;
+      margin: 2rem auto;
+    }
   }
+
 </style>

@@ -51,7 +51,13 @@
 
     .project-post {
       margin: 50px 20px;
-      border: 1px solid #aaa;
+      border: 1px solid #eee;
+      box-shadow: 3px 3px 7px #eee;
+      transition: .3s;
+      &:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 10px #eee;
+      }
     }
 
     .post-content {
@@ -60,9 +66,10 @@
       align-items: flex-start;
       grid-row-gap: 30px;
 
+
       .baner {
         width: 100%;
-        /*height: 300px;*/
+        height: 100%;
         overflow: hidden;
         position: relative;
 

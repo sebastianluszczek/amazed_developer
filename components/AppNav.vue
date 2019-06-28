@@ -3,8 +3,8 @@
     <AppLogo></AppLogo>
     <nav>
       <ul class="nav-list">
+        <nuxt-link to="/about">O mnie</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-        <nuxt-link to="/about">About</nuxt-link>
         <nuxt-link to="/blog">Blog</nuxt-link>
       </ul>
     </nav>
