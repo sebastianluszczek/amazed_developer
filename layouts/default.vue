@@ -31,20 +31,18 @@ export default {
 <style lang="scss">
 .default {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
-
-  .navigation {
-    width: 71.3%;
-  }
+  grid-template-columns: 460px auto;
 
   .app-logo {
     display: none;
   }
 
   .side {
-    height: 100%;
-    width: 100%;
-    position: relative;
+    height: 100vh;
+    width: 460px;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     &::before {
       content: "";
@@ -54,23 +52,22 @@ export default {
       width: 100%;
       height: 100%;
       background-image: url("/img/side_bg.jpg");
-      background-position: 30% 0;
-      background-attachment: fixed;
+      background-position: left;
       background-size: cover;
       background-repeat: no-repeat;
       filter: grayscale(70%) brightness(0.5);
     }
     .footer {
-      position: fixed;
-      width: 28%;
+      position: absolute;
+      width: 100%;
     }
 
     .logo {
-      width: 60%;
+      width: 80%;
       max-width: 300px;
-      position: fixed;
+      position: absolute;
       top: 40%;
-      left: 15%;
+      left: 50%;
       transform: translate(-50%, -50%);
 
       .avatar {
@@ -102,6 +99,13 @@ export default {
 
   main {
     position: relative;
+    grid-column: 2/3;
+    background-color: #fff;
+    min-height: 100vh;
+
+    .navigation {
+      width: calc(100% - 460px);
+    }
     .container {
       width: 80%;
       margin: 5rem auto;
