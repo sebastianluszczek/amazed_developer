@@ -12,6 +12,11 @@
   export default {
     fetch ({ params, redirect }) {
       redirect(301, '/about/')
+    },
+    computed: {
+      projects() {
+        return this.$store.state.projectlist;
+      }
     }
   }
 </script>

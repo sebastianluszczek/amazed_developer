@@ -26,7 +26,7 @@ export default {
   name: "blog",
   computed: {
     bloglist() {
-      return this.$store.state.bloglist.slice(0, this.postsPerPage);
+      return this.$store.state.bloglist;
     }
   },
   created() {
