@@ -3,14 +3,20 @@
 const glob = require("glob");
 // we acquire an array containing the filenames
 // in the articles directory
-let files = glob.sync("**/*.md", { cwd: "articles" });
+let articles = glob.sync("**/*.md", { cwd: "articles" });
+let projects = glob.sync("**/*.md", { cwd: "projects" });
 
 // We define a function to trim the '.md' from the filename
 // and return the correct path.
 // This function will be used later
-function getSlugs(post, _) {
+function getBlogs(post) {
   let slug = post.substr(0, post.lastIndexOf("."));
-  return `/blog/${slug}`;
+    return `/blog/${slug}`;
+}
+
+function getProjects(post) {
+  let slug = post.substr(0, post.lastIndexOf("."));
+  return `/portfolio/${slug}`;
 }
 
 export default {
@@ -86,7 +92,11 @@ export default {
   },
   generate: {
     routes: function() {
-      return files.map(getSlugs);
+      // return files.map(getSlugs());
+      let blog = articles.map(getBlogs);
+      let port = projects.map(getProjects);
+      let both = blog.concat(port);
+      return both;
     }
   }
 };
