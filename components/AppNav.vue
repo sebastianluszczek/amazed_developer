@@ -3,8 +3,8 @@
         <AppLogo></AppLogo>
         <nav>
             <ul class="nav-list">
+                <nuxt-link to="/">O mnie</nuxt-link>
                 <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-                <nuxt-link to="/about">O mnie</nuxt-link>
                 <nuxt-link to="/blog">Blog</nuxt-link>
             </ul>
         </nav>
@@ -46,7 +46,7 @@
                 border-bottom: 1px solid #fff;
                 font-weight: 600;
 
-                &.nuxt-link-active {
+                &.nuxt-link-exact-active {
                     border-bottom: 1px solid #333;
                 }
             }
