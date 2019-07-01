@@ -1,7 +1,12 @@
 <template>
   <div class="blog container">
     <h1>Blog</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempore ratione perspiciatis aliquam. Natus nostrum perspiciatis quisquam quod totam non recusandae molestias nemo, saepe velit, iste hic officiis aliquam architecto blanditiis reiciendis nam ut tempora mollitia reprehenderit impedit! Iste ad, aspernatur ratione quidem dolore placeat rerum! Rem quibusdam eos sequi mollitia quia vitae! Perferendis, exercitationem minima. Quibusdam nisi possimus architecto vel quam voluptate quae inventore quaerat ullam enim molestiae odio alias iusto impedit obcaecati, recusandae magnam maiores nostrum facilis? Veritatis nemo illo distinctio amet, natus repellat quas minus tempore laborum tenetur quibusdam aut unde quis voluptate a rem, laudantium culpa!</p>
+    <p>W tym miejscu będzie pojawiało się coś na zasadzie blogu. Podkreślam, że nie będzie to raczej typowy blog (moze
+      kiedyś się w niego przekształci jak nabiorę wprawy). Chciałbym aby były to bardziej notatki niedoświadczonego
+      programisty. Sytuacja gdzie szukam po repo projektu, który robiłem bardzo niedawno, bo potrzebuję jakiś jego
+      fragment, zdaża mi sie bardzo często. Stad w tym miejscu mają się znaleźć opisy prostych projektów z informacjami o
+      podejściu, wykożystanych technologiach, fragmentami kodu i odnośnikami do repo lub ciekawych zewnętrznych źródeł wiedzy.</p>
+    <p>Nauczę się czegoś, to tu się to znajdzie :D</p>
 
     <div v-for="(post,key) in bloglist" :key="key" class="blog-post">
       <nuxt-link :to="`/blog/${post.slug}`">
@@ -22,44 +27,44 @@
 </template>
 
 <script>
-export default {
-  name: "blog",
-  computed: {
-    bloglist() {
-      return this.$store.state.bloglist;
+  export default {
+    name: "blog",
+    computed: {
+      bloglist() {
+        return this.$store.state.bloglist;
+      }
+    },
+    created() {
+      console.log(this.bloglist);
     }
-  },
-  created() {
-    console.log(this.bloglist);
-  }
-};
+  };
 </script>
 
 <style lang="scss">
-.blog {
-  .blog-post {
-    margin-top: 30px;
-    padding: 20px;
+  .blog {
+    .blog-post {
+      margin-top: 30px;
+      padding: 20px;
 
-    a {
-      text-decoration: none;
-      color: #333;
-    }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
 
-    .baner {
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      position: relative;
-
-      .baner-img {
+      .baner {
         width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+
+        .baner-img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
       }
     }
   }
-}
 </style>

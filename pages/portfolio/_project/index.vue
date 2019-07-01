@@ -84,6 +84,7 @@
 
       .image-half {
         position: relative;
+        border: 1px solid #eee;
 
         .image {
           display: block;

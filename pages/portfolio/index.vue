@@ -2,11 +2,8 @@
   <div class="container portfolio">
     <div>
       <h1 class="title">Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae corporis deleniti dicta dolor ducimus eius
-        eos error, eum ex excepturi expedita fugiat in ipsa ipsam labore laudantium magni molestias nemo neque nesciunt
-        nihil obcaecati placeat possimus quibusdam quisquam quod quos rem tempore tenetur ullam ut, veritatis voluptate!
-        Aspernatur assumenda commodi culpa delectus dignissimos eligendi, est id ipsa ipsum laborum non nostrum placeat
-        qui quod recusandae suscipit vel. Ab aliquam, aliquid.</p>
+      <p>Poniżej przedstawiam kilka moich wybranych projektów. Każdy z nich starałem sie opisać w dwóch zdaniach i
+        przedstawić wykożystane technologie. Po kliknięciu na blok znajdziesz dokładniejszy opis, ze zdjęciami oraz odnośnikami do kodu czy witryny.</p>
 
       <div v-for="(post,key) in projectList" :key="key" class="project-post">
         <nuxt-link :to="`/portfolio/${post.slug}`" class="post-content">
