@@ -22,6 +22,8 @@ export const actions = {
     navigate back to it
   */
   async nuxtServerInit({ commit, dispatch }) {
+
+    console.log('nuxtServerInit launched');
     var articles = await require.context("~/articles/", false, /\.md$/);
     let articlesList = await dispatch('prepareMarkdown', articles);
     await commit("setBlogList", articlesList);
