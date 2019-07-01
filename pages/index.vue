@@ -10,7 +10,13 @@
 
 <script>
   export default {
+    data() {
+      return {
+        blogs: null
+      }
+    },
     fetch ({ store, redirect }) {
+      this.blogs = store.state.bloglist();
       redirect(301, '/portfolio')
     }
   }
