@@ -1,7 +1,7 @@
 ---
 title: EventSide
 published: true
-description: Aplikacja FullStack pozwalająca na rejestracje/logowanie (JWT), oraz tworzenie i bookowanie eventów (CRUD) 
+description: Aplikacja FullStack pozwalająca na rejestracje/logowanie (JWT), oraz tworzenie i bookowanie eventów (CRUD). Zamiast standardowego REST API wykorzystałem API GraphQL 
 ctime: 2019-06-26
 git: https://github.com/sebastianluszczek/graphql_events_app
 url: 
@@ -9,15 +9,27 @@ img: /projects_img/eventside.png
 tech: vuejs,apollo,graphql,mongo_db,nodejs
 ---
 
-# EventSIDE
+# Pierwsza próba połączenia aplikacji GraphQL z klientem front-endowym
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sagittis justo. Etiam pretium luctus tellus eu sollicitudin. Maecenas varius eros non nisl imperdiet ultricies. Donec vulputate vestibulum tortor, quis faucibus nunc hendrerit vel. Nam quis aliquam ante. Aenean ullamcorper libero tellus, nec viverra erat tempus a. Morbi mattis ligula at dignissim malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus justo, luctus ut lorem id, commodo maximus lectus. Donec mi justo, tristique ac odio vitae, faucibus convallis lorem.
+Pomysł tego projektu podsunął kurs na youtube [Build a Complete App with GraphQL, Node.js, MongoDB and React.js](https://www.youtube.com/watch?v=7giZGFDGnkc&list=PL55RiY5tL51rG1x02Yyj93iypUuHYXcB_), a jako, ze nie mam pojęcia za duzego o React.js pomyślałem, ze dobrym pomysłem będzie przerobić część o backendzie a front-endowego klienta napisać samemu w Vue.js. Wyszło zadowalajaco, rozbudowałem nawet nieznacznie aplikacje o avatary eventów i usówanie samych eventów (modyfikacje Schemy).
 
-Vivamus id aliquam lorem. Ut nec mauris nec neque fermentum egestas. Etiam commodo erat ex, non facilisis magna malesuada at. Praesent placerat lobortis vestibulum. Quisque consequat, elit in rhoncus consectetur, orci ligula iaculis enim, eu fringilla elit diam eu nisi. Curabitur nec dolor nec enim porta tempor. Praesent sed nisi tempus, consectetur libero non, hendrerit nibh. Praesent tempor, nulla eu commodo imperdiet, sapien purus condimentum nulla, vitae hendrerit lectus velit sed lorem. Aenean eleifend ligula non lobortis volutpat. Suspendisse ullamcorper mi id diam consequat dictum. Phasellus vitae mi iaculis, aliquam tellus eget, varius augue.
+---
+## Aplikacja korzysta z:
+<div style="display: flex">
+<img src="/icons/vuejs.png" "Vue.js" style="height: 64px; padding: 0 10px">
+<img src="/icons/apollo.png" "Apollo" style="height: 64px; padding: 0 10px">
+<img src="/icons/SASS.png" "Sass" style="height: 64px; padding: 0 10px">
+<img src="/icons/graphql.png" "GraphQL" style="height: 64px; padding: 0 10px">
+<img src="/icons/mongo_db.png" "MongoDB" style="height: 64px; padding: 0 10px">
+<img src="/icons/nodejs.png" "Node.js" style="height: 64px; padding: 0 10px">
+<img src="/icons/JWT.png" "JWT tokens" style="height: 64px; padding: 0 10px">
+<img src="/icons/express.png" "express" style="height: 44px; padding: 10px 10px">
+</div>
 
-Pellentesque pellentesque ante nec lacus tempor pretium. Nam turpis velit, interdum nec mauris ut, vulputate condimentum purus. Mauris faucibus sem enim, sed ultrices nulla scelerisque a. Cras dapibus, orci id mollis pretium, quam lectus sollicitudin orci, venenatis tempor tellus neque in libero. Aliquam ac nibh nec metus dignissim finibus a et neque. Nullam gravida urna eros, eget iaculis tortor rhoncus sed. Cras pharetra consectetur augue a placerat. Duis ullamcorper sit amet nunc ac varius. Pellentesque et tellus venenatis, ultrices nisi ornare, pulvinar tellus. Aliquam malesuada sed nulla id molestie. Aliquam finibus eros at ex condimentum euismod. Curabitur eu aliquet libero. Cras ac sapien a neque lacinia varius eget in nulla. Fusce fermentum mi vel dolor porta cursus at at ex. Aenean at ex sit amet augue blandit gravida.
+---
 
-Duis sagittis et lectus eu interdum. Fusce vitae pretium diam, non tincidunt felis. In ac porta nisi. In hac habitasse platea dictumst. Cras ullamcorper blandit leo, sed imperdiet lectus. Mauris blandit a purus in mollis. Quisque placerat, mi sit amet mollis dapibus, dolor enim ultrices nibh, in efficitur diam nulla ac sem. Praesent ut bibendum risus. Duis blandit finibus nulla, non tincidunt ipsum sollicitudin a. Quisque auctor enim eget lectus semper molestie. Proin vel augue sodales, sollicitudin lectus at, mollis nisi. Nunc tempor congue luctus.
+Aplikacja pozwala na rejestracje i logowanie użytkowników. Zalogowany klient otrzymuje token JWT i z nim wykonuje zapytania do platformy. Klient moze tworzyć, usówać i edytować eventy, oraz bookować swoje uczestnictwo w nich (z możliwością odwołania udziału).
+Tylko zalogowany użytkownik ma dostęp do bookowania i widzi zabookowane przez siebie wydarzenia. Każdy natomiast moze zobaczyć liste wszystkich wydarzeń.
 
-Aenean in ornare tortor. Curabitur commodo ac nulla vitae tincidunt. Nulla sit amet lorem nunc. Donec non metus pharetra, sagittis ligula non, varius purus. Curabitur nec libero et arcu aliquam porta vitae vel eros. Integer scelerisque eros sapien, in tincidunt neque cursus eu. Aliquam erat volutpat. Donec ac euismod augue. Phasellus feugiat malesuada enim, a pharetra ex commodo ut.
+Od strony front-endu Vue.js wykorzystuje klienta Apollo do komunikowania się z platformą i odpytywania od dane. Znacznie ułatwia to komunikacje i zrozumienie kody, lecz połączenie Vuex'a i Apollo sprawiło mi sporo problemów.

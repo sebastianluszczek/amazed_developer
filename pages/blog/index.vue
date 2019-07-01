@@ -1,6 +1,6 @@
 <template>
   <div class="blog container">
-    <h1>Blog</h1>
+    <h1 class="title">Blog</h1>
     <p>W tym miejscu będzie pojawiało się coś na zasadzie blogu. Podkreślam, że nie będzie to raczej typowy blog (moze
       kiedyś się w niego przekształci jak nabiorę wprawy). Chciałbym aby były to bardziej notatki niedoświadczonego
       programisty. Sytuacja gdzie szukam po repo projektu, który robiłem bardzo niedawno, bo potrzebuję jakiś jego
@@ -15,7 +15,7 @@
           <div class="baner">
             <img :src="post.avatar" alt class="baner-img">
           </div>
-          <h2 class="title">{{ post.title }}</h2>
+          <h2 class="post-title">{{ post.title }}</h2>
           <p class="subtitle">{{ post.description }}</p>
           <div class="level">
             <p class="small level-left">Published on {{ post.ctime.toString().slice(0, 24) }}</p>
@@ -42,6 +42,9 @@
 
 <style lang="scss">
   .blog {
+    .title {
+      margin-top: 3rem;
+    }
     .blog-post {
       margin-top: 30px;
       padding: 20px;

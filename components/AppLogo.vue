@@ -39,6 +39,19 @@
         }
       }
     }
+    @media screen and (max-width: 1280px) {
+      .avatar {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      .name {
+        h1 {
+          line-height: 3rem;
+          font-size: 28px;
+        }
+      }
+    }
   }
 
 </style>

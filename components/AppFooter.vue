@@ -44,6 +44,13 @@
       color: #fff;
       font-weight: bold;
     }
+
+    @media screen and (max-width: 1280px) {
+      font-size: 14px;
+      .socials {
+        font-size: 24px;
+      }
+    }
   }
 
 </style>

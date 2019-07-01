@@ -11,7 +11,7 @@
             <img :src="post.img" alt class="baner-img">
           </div>
           <div class="description">
-            <h2 class="title">{{ post.title }}</h2>
+            <h2 class="project-title">{{ post.title }}</h2>
             <p class="subtitle">{{ post.description }}</p>
             <div class="tech_icons">
               <img v-for="icon in (post.tech.split(','))" :key="icon" :src="`/icons/${icon}.png`" :alt="icon"
@@ -41,6 +41,9 @@
 
 <style lang="scss">
   .portfolio {
+    .title {
+      margin-top: 3rem;
+    }
     a {
       text-decoration: none;
       color: #333;
@@ -80,6 +83,10 @@
         position: relative;
         height: 100%;
 
+        .subtitle {
+          font-size: 16px;
+        }
+
         .tech_icons {
           width: 100%;
           text-align: right;
@@ -93,8 +100,46 @@
             padding: 0 5px;
           }
         }
+      }
+    }
 
+    @media screen and (max-width: 1280px) {
+      .project-post {
+        margin: 30px 15px;
+      }
 
+      .post-content {
+        grid-template-columns: 1fr 1.5fr;
+        height: 190px;
+
+        .baner {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+
+          .baner-img {
+            height: 100%;
+          }
+        }
+
+        .description {
+          position: relative;
+          height: 100%;
+
+          .subtitle {
+            font-size: 16px;
+          }
+
+          .tech_icons {
+            bottom: 5px;
+            right: 5px;
+
+            .tech_icon {
+              height: 32px;
+            }
+          }
+        }
       }
     }
   }

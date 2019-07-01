@@ -1,14 +1,14 @@
 <template>
-    <div class="navigation">
-        <AppLogo></AppLogo>
-        <nav>
-            <ul class="nav-list">
-                <nuxt-link to="/">O mnie</nuxt-link>
-                <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-                <nuxt-link to="/blog">Blog</nuxt-link>
-            </ul>
-        </nav>
-    </div>
+  <div class="navigation">
+    <AppLogo></AppLogo>
+    <nav>
+      <ul class="nav-list">
+        <nuxt-link to="/">O mnie</nuxt-link>
+        <nuxt-link to="/portfolio">Portfolio</nuxt-link>
+        <nuxt-link to="/blog">Blog</nuxt-link>
+      </ul>
+    </nav>
+  </div>
 </template>
 
 <script>
@@ -22,34 +22,41 @@
 </script>
 
 <style lang="scss">
-    .navigation {
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        z-index: 10;
-        height: 5rem;
-        box-shadow: 10px 3px 10px #eee;
+  .navigation {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    height: 5rem;
+    box-shadow: 10px 3px 10px #eee;
 
-        .nav-list {
-            padding: 10px 40px;
+    .nav-list {
+      padding: 10px 40px;
 
-            a {
-                padding: 5px 10px;
-                margin: 0 10px;
-                text-decoration: none;
-                color: #333;
-                transition: 0.3s;
-                border-bottom: 1px solid #fff;
-                font-weight: 600;
+      a {
+        padding: 5px 10px;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+        border-bottom: 1px solid #fff;
+        font-weight: 600;
 
-                &.nuxt-link-exact-active {
-                    border-bottom: 1px solid #333;
-                }
-            }
+        &.nuxt-link-exact-active {
+          border-bottom: 1px solid #333;
         }
+      }
     }
+    @media screen and (max-width: 1280px) {
+      height: 4rem;
+
+      .nav-list {
+        padding: 5px 0;
+      }
+    }
+  }
 </style>
