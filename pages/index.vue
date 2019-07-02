@@ -23,7 +23,6 @@
         <img src="/icons/vuetify.png" alt="" class="icon">
         <img src="/icons/nuxt.png" alt="" class="icon">
         <img src="/icons/apollo.png" alt="" class="icon">
-        <img src="/icons/webpack.png" alt="" class="icon">
       </div>
     </div>
     <div class="stack">
@@ -40,6 +39,15 @@
     <p>Nie czuję się ekspertem w tych technologiach, ale w każdej z nich wykonałem kilka prostszych lub trudniejszych
       projektów. Zwłaszcza back-end jest dla mnie bardzo nową rzeczą, ale chciałbym poświęcić na niego w przyszłości
       znacznei więcej czasu.</p>
+    <div class="stack">
+      <p>Do tego w swojej pracy używam przydatnych narzędzi:</p>
+      <div class="icons">
+        <img src="/icons/git.png" alt="" class="icon">
+        <img src="/icons/unix.png" alt="" class="icon">
+        <img src="/icons/webpack.png" alt="" class="icon">
+        <img src="/icons/figma.png" alt="" class="icon">
+      </div>
+    </div>
     <h1 class="title">Kontakt</h1>
     <p>Jeśli masz jakieś pytania, oferty współpracy lub uwagi do projektów, odezwij się do mnie!</p>
     <div class="contact">
@@ -66,7 +74,7 @@
 <style lang="scss">
   .about {
     .title {
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
 
     .stack {

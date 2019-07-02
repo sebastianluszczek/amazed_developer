@@ -3,7 +3,8 @@
     <div>
       <h1 class="title">Portfolio</h1>
       <p>Poniżej przedstawiam kilka moich wybranych projektów. Każdy z nich starałem sie opisać w dwóch zdaniach i
-        przedstawić wykożystane technologie. Po kliknięciu na blok znajdziesz dokładniejszy opis, ze zdjęciami oraz odnośnikami do kodu czy witryny.</p>
+        przedstawić wykożystane technologie. Po kliknięciu na blok znajdziesz dokładniejszy opis, ze zdjęciami oraz
+        odnośnikami do kodu czy witryny.</p>
 
       <div v-for="(post,key) in projectList" :key="key" class="project-post">
         <nuxt-link :to="`/portfolio/${post.slug}`" class="post-content">
@@ -20,7 +21,11 @@
           </div>
         </nuxt-link>
       </div>
-
+      <p>Po znacznie więcej projektów zapraszam na mojego <a href="https://github.com/sebastianluszczek"
+                                                             target="_blank">Githuba
+        <fa :icon="['fab', 'github']"/>
+      </a>. Postaram się, aby każdy godny uwagi projekt posiadał chociaż proste README.md.
+      </p>
     </div>
   </div>
 </template>
@@ -44,6 +49,7 @@
     .title {
       margin-top: 3rem;
     }
+
     a {
       text-decoration: none;
       color: #333;

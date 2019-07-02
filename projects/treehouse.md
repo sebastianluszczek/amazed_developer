@@ -1,6 +1,6 @@
 ---
 title: treehouse.com
-description: Projekt treningowy zakładający podejście RWD i wykożystanie Webpacka
+description: Projekt treningowy zakładający podejście RWD i wykożystanie Webpacka. Prosta budowa strony, przejrzysty kod i dbałość o dobre praktyki.
 url: https://quirky-bose-31b298.netlify.com/
 ctime: 2019-06-26
 git: 
@@ -8,14 +8,30 @@ img: /projects_img/treehouse.png
 tech: HTML5,JavaScript,SASS
 ---
 
-# treehouse.com
+# Prosta mockowa strona z podejściem RWD
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id sagittis justo. Etiam pretium luctus tellus eu sollicitudin. Maecenas varius eros non nisl imperdiet ultricies. Donec vulputate vestibulum tortor, quis faucibus nunc hendrerit vel. Nam quis aliquam ante. Aenean ullamcorper libero tellus, nec viverra erat tempus a. Morbi mattis ligula at dignissim malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus justo, luctus ut lorem id, commodo maximus lectus. Donec mi justo, tristique ac odio vitae, faucibus convallis lorem.
+Jako, że obecnie każda aplikacja internetowa powinna wspierać wszystkie użądzenia, a nawet skupiać się na odbiorcach mobilnych (większa część ruchu w sieci odbywa sie przy pomocy smartfonów), projekty ternujące podejście RWD są niezmiernie ważne.
+W ostatnim czasie zrobiłem sporo tego typu stron, między innymi komercyją stronę https://dachyluszczek.pl, oraz kilka stron - ćwiczeń jak tu. nie koniecznie jest sens pokazywać więcej.
 
-Vivamus id aliquam lorem. Ut nec mauris nec neque fermentum egestas. Etiam commodo erat ex, non facilisis magna malesuada at. Praesent placerat lobortis vestibulum. Quisque consequat, elit in rhoncus consectetur, orci ligula iaculis enim, eu fringilla elit diam eu nisi. Curabitur nec dolor nec enim porta tempor. Praesent sed nisi tempus, consectetur libero non, hendrerit nibh. Praesent tempor, nulla eu commodo imperdiet, sapien purus condimentum nulla, vitae hendrerit lectus velit sed lorem. Aenean eleifend ligula non lobortis volutpat. Suspendisse ullamcorper mi id diam consequat dictum. Phasellus vitae mi iaculis, aliquam tellus eget, varius augue.
+---
+## Aplikacja korzysta z:
+<div style="display: flex">
+<img src="/icons/HTML5.png" "HTML5" style="height: 64px; padding: 0 10px">
+<img src="/icons/SASS.png" "Scss" style="height: 64px; padding: 0 10px">
+<img src="/icons/JavaScript.png" "JavaScript" style="height: 64px; padding: 0 10px">
+<img src="/icons/webpack.png" "Webpack" style="height: 64px; padding: 0 10px">
+</div>
 
-Pellentesque pellentesque ante nec lacus tempor pretium. Nam turpis velit, interdum nec mauris ut, vulputate condimentum purus. Mauris faucibus sem enim, sed ultrices nulla scelerisque a. Cras dapibus, orci id mollis pretium, quam lectus sollicitudin orci, venenatis tempor tellus neque in libero. Aliquam ac nibh nec metus dignissim finibus a et neque. Nullam gravida urna eros, eget iaculis tortor rhoncus sed. Cras pharetra consectetur augue a placerat. Duis ullamcorper sit amet nunc ac varius. Pellentesque et tellus venenatis, ultrices nisi ornare, pulvinar tellus. Aliquam malesuada sed nulla id molestie. Aliquam finibus eros at ex condimentum euismod. Curabitur eu aliquet libero. Cras ac sapien a neque lacinia varius eget in nulla. Fusce fermentum mi vel dolor porta cursus at at ex. Aenean at ex sit amet augue blandit gravida.
+---
 
-Duis sagittis et lectus eu interdum. Fusce vitae pretium diam, non tincidunt felis. In ac porta nisi. In hac habitasse platea dictumst. Cras ullamcorper blandit leo, sed imperdiet lectus. Mauris blandit a purus in mollis. Quisque placerat, mi sit amet mollis dapibus, dolor enim ultrices nibh, in efficitur diam nulla ac sem. Praesent ut bibendum risus. Duis blandit finibus nulla, non tincidunt ipsum sollicitudin a. Quisque auctor enim eget lectus semper molestie. Proin vel augue sodales, sollicitudin lectus at, mollis nisi. Nunc tempor congue luctus.
+Nie jestem za dobrym designerem, mam nadzieję, że się to poprawi niedługo, ale na razie muszę posiłkować się gotowymi mockowymi stronami i darmowymi szablonami znalezionymi w internecie.
+Koduję oczywiście wszystko od zera i wprowadzam sporo swoich zmian w wyglądzie, ale nadal muszę czerpać inspirację z gotowców.
 
-Aenean in ornare tortor. Curabitur commodo ac nulla vitae tincidunt. Nulla sit amet lorem nunc. Donec non metus pharetra, sagittis ligula non, varius purus. Curabitur nec libero et arcu aliquam porta vitae vel eros. Integer scelerisque eros sapien, in tincidunt neque cursus eu. Aliquam erat volutpat. Donec ac euismod augue. Phasellus feugiat malesuada enim, a pharetra ex commodo ut.
+
+Strona ma bardzo prostą budowę, prawie wszystko napisane w czystym JavaScripcie i zbudowane za pomocą Webpack'a.
+W projekcie wykorzystałem odrobinę JQuery do zrobienia płynnego przeskakiwania do poszczególnych sekcji strony za pomocą nawigacji.
+Nie wszystkie przeglądarki wspierają css'owy 'scroll-behavior: smooth', a JQuery wydało mi sie najszybszym i najprostszym pomysłem na zabezpieczenie tego.
+
+
+Strona niestety nie została pisana w podejściu 'mobile-first', gdyż zazwyczaj nie projektuję jej przed rozpoczęciem pracy.
+Piszę wersję desktopową inspirując się stronami w necie, a potem dorabiam 'mobile view'. Zdaję sobie sprawę z ułomności tego podejścia i zamierzam w niedalekiej przyszłości zmienić to jak i zacząć korzystać z BEM przy pisaniu kodu CSS.
