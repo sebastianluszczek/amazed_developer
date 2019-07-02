@@ -69,25 +69,27 @@
 
     .post-content {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1.5fr;
       align-items: flex-start;
       grid-row-gap: 30px;
 
 
       .baner {
         width: 100%;
-        height: 100%;
+        height: auto;
         overflow: hidden;
         position: relative;
 
         .baner-img {
           width: 100%;
+          height: auto;
         }
       }
 
       .description {
         position: relative;
         height: 100%;
+        margin: 0.5rem 1rem 3rem;
 
         .subtitle {
           font-size: 16px;
@@ -125,7 +127,7 @@
           position: relative;
 
           .baner-img {
-            height: 100%;
+            /*height: 100%;*/
           }
         }
 
