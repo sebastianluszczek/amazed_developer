@@ -16,15 +16,15 @@ Pomysł tego projektu podsunął kurs na youtube [Build a Complete App with Grap
 
 ---
 ## Aplikacja korzysta z:
-<div style="display: flex">
-<img src="/icons/vuejs.png" "Vue.js" style="height: 64px; padding: 0 10px">
-<img src="/icons/apollo.png" "Apollo" style="height: 64px; padding: 0 10px">
-<img src="/icons/SASS.png" "Sass" style="height: 64px; padding: 0 10px">
-<img src="/icons/graphql.png" "GraphQL" style="height: 64px; padding: 0 10px">
-<img src="/icons/mongo_db.png" "MongoDB" style="height: 64px; padding: 0 10px">
-<img src="/icons/nodejs.png" "Node.js" style="height: 64px; padding: 0 10px">
-<img src="/icons/JWT.png" "JWT tokens" style="height: 64px; padding: 0 10px">
-<img src="/icons/express.png" "express" style="height: 44px; padding: 10px 10px">
+<div class="md_icons_wrapper">
+<img src="/icons/vuejs.png" "Vue.js" class="md_icon">
+<img src="/icons/apollo.png" "Apollo" class="md_icon">
+<img src="/icons/SASS.png" "Sass" class="md_icon">
+<img src="/icons/graphql.png" "GraphQL" class="md_icon">
+<img src="/icons/mongo_db.png" "MongoDB" class="md_icon">
+<img src="/icons/nodejs.png" "Node.js" class="md_icon">
+<img src="/icons/JWT.png" "JWT tokens" class="md_icon">
+<img src="/icons/express.png" "express" class="md_icon">
 </div>
 
 ---

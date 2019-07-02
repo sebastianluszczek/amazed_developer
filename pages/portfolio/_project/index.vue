@@ -129,6 +129,46 @@
         }
       }
     }
+
+    @media screen and (max-width: 420px) {
+      .proj-baner {
+        width: 100vw;
+        display: block;
+        padding-top: 0;
+
+        .title-half {
+          padding: 1rem;
+          text-align: right;
+          position: relative;
+          height: 200px;
+
+          .title {
+            font-size: 28px;
+          }
+
+          .links {
+            position: absolute;
+            bottom: 0;
+            right: 1rem;
+            margin-bottom: 1rem;
+
+            p {
+              font-size: 16px;
+            }
+
+            svg {
+              margin: 0;
+              font-size: 30px;
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+
+      .blog-container {
+        width: 90%;
+      }
+    }
   }
 
 </style>

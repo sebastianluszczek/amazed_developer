@@ -15,11 +15,11 @@ Gdy znalazłem tutorial na youtube'ie pokazujący podstawy Nuxt.js pomyślałem 
 
 ---
 ## Aplikacja korzysta z:
-<div style="display: flex">
-<img src="/icons/vuejs.png" "Vue.js" style="height: 64px; padding: 0 10px">
-<img src="/icons/nuxt.png" "Nuxt.js" style="height: 64px; padding: 0 10px">
-<img src="/icons/markdown.png" "Markdown" style="height: 64px; padding: 0 10px">
-<img src="/icons/SASS.png" "Sass" style="height: 64px; padding: 0 10px">
+<div class="md_icons_wrapper">
+<img src="/icons/vuejs.png" "Vue.js" class="md_icon">
+<img src="/icons/nuxt.png" "Nuxt.js" class="md_icon">
+<img src="/icons/markdown.png" "Markdown" class="md_icon">
+<img src="/icons/SASS.png" "Sass" class="md_icon">
 </div>
 
 ---

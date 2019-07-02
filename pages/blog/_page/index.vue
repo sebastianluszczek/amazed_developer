@@ -80,5 +80,34 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 420px) {
+    width:90%;
+    margin: 6rem auto;
+
+    .baner {
+      width: 100%;
+      display: block;
+      height: auto;
+      margin-bottom: 2rem;
+
+      .title-half {
+        .title {
+          font-size: 32px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .image-half {
+        position: relative;
+
+        .image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 </style>

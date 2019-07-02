@@ -16,10 +16,10 @@ Kurs mówił głównie o wykorzystaniu Vuetify ale ze względu na pomysł dodani
 
 ---
 ## Aplikacja korzysta z:
-<div style="display: flex">
-<img src="/icons/vuejs.png" "Vue.js" style="height: 64px; padding: 0 10px">
-<img src="/icons/vuetify.png" "Apollo" style="height: 64px; padding: 0 10px">
-<img src="/icons/firebase.png" "Sass" style="height: 64px; padding: 0 10px">
+<div class="md_icons_wrapper">
+<img src="/icons/vuejs.png" "Vue.js" class="md_icon">
+<img src="/icons/vuetify.png" "Apollo" class="md_icon">
+<img src="/icons/firebase.png" "Sass" class="md_icon">
 </div>
 
 ---

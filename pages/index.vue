@@ -29,7 +29,6 @@
       <p>Technologie back-endowe:</p>
       <div class="icons">
         <img src="/icons/nodejs.png" alt="" class="icon">
-        <img src="/icons/express.png" alt="" class="icon express">
         <img src="/icons/graphql.png" alt="" class="icon">
         <img src="/icons/mongo_db.png" alt="" class="icon">
         <img src="/icons/JWT.png" alt="" class="icon">
@@ -86,12 +85,6 @@
         .icon {
           padding: 0 10px;
           height: 54px;
-
-          &.express {
-            width: 120px;
-            height: 40px;
-            margin-top: 10px;
-          }
         }
       }
     }
@@ -136,6 +129,37 @@
 
       .contact {
         margin: 1rem 2rem;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      .stack {
+        margin: 2rem 0;
+
+        .icons {
+          padding: 0 20px;
+          flex-wrap: wrap;
+          .icon {
+            padding: 0 5px;
+            margin-bottom: 10px;
+            height:36px;
+          }
+        }
+      }
+
+      .contact {
+        margin: 2rem 2rem;
+
+        .contact_element {
+
+          svg {
+            font-size: 24px;
+          }
+
+          h5 {
+            font-size: 16px;
+          }
+        }
       }
     }
   }

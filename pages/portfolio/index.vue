@@ -148,6 +148,50 @@
         }
       }
     }
+    @media screen and (max-width: 420px) {
+      .project-post {
+        margin: 20px 0;
+        border: 1px solid #eee;
+        box-shadow: 3px 3px 7px #eee;
+      }
+
+      .post-content {
+        display: block;
+        height: auto;
+
+        .baner {
+          overflow: hidden;
+          position: relative;
+
+          .baner-img {
+            width: 100%;
+          }
+        }
+
+        .description {
+          position: relative;
+          margin: 0 1rem;
+          auto: 300px;
+          padding-bottom: 2rem;
+
+          .project-title {
+            font-size: 22px;
+            margin: 0.5rem 0;
+          }
+
+          .subtitle {
+            font-size: 14px;
+          }
+
+          .tech_icons {
+            .tech_icon {
+              height: 28px;
+            }
+          }
+        }
+      }
+    }
+
   }
 </style>
 

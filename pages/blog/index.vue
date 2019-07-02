@@ -69,5 +69,24 @@
         }
       }
     }
+
+    @media screen and (max-width: 420px) {
+      .blog-post {
+        margin-top: 20px;
+        padding: 10px;
+
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+
+        .baner {
+          width: 100%;
+          height: 120px;
+          overflow: hidden;
+          position: relative;
+        }
+      }
+    }
   }
 </style>

@@ -15,11 +15,11 @@ W ostatnim czasie zrobiłem sporo tego typu stron, między innymi komercyją str
 
 ---
 ## Aplikacja korzysta z:
-<div style="display: flex">
-<img src="/icons/HTML5.png" "HTML5" style="height: 64px; padding: 0 10px">
-<img src="/icons/SASS.png" "Scss" style="height: 64px; padding: 0 10px">
-<img src="/icons/JavaScript.png" "JavaScript" style="height: 64px; padding: 0 10px">
-<img src="/icons/webpack.png" "Webpack" style="height: 64px; padding: 0 10px">
+<div class="md_icons_wrapper">
+<img src="/icons/HTML5.png" "HTML5" class="md_icon">
+<img src="/icons/SASS.png" "Scss" class="md_icon">
+<img src="/icons/JavaScript.png" "JavaScript" class="md_icon">
+<img src="/icons/webpack.png" "Webpack" class="md_icon">
 </div>
 
 ---
