@@ -32,7 +32,36 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "Strona poświęcona działalności niedoświadczonego, wiecznie zdumionego programisty."
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "vuejs, nuxt, javascript, nodejs, firebase, rest, graphql frontend"
+      },
+      { name: "robots", hid: "robots" , content: "index, follow" },
+      { name: "twitter:card", content: '/img/og_bgi.jpg' },
+      { name: "twitter:site", content: "@AmazedBear" },
+      {
+        hid: `og:title`,
+        property: 'og:title',
+        content: 'AmazedDeveloper.pl'
+      },
+      {
+        hid: `og:url`,
+        property: 'og:url',
+        content: 'https://www.amazeddeveloper.pl/'
+      },
+      {
+        hid: `og:image`,
+        property: 'og:image',
+        content: '/img/og_bgi.jpg'
+      },
+      {
+        hid: `og:description`,
+        property: 'og:description',
+        content: "Strona poświęcona działalności niedoświadczonego, wiecznie zdumionego programisty."
       }
     ],
     link: [{ rel: "icon", type: "image/png", href: "/img/amazed_favicon.png" }]
@@ -40,7 +69,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: "#000" },
   /*
    ** Global CSS
    */
