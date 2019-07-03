@@ -67,7 +67,12 @@
 </template>
 
 <script>
-    export default {};
+  export default {
+    pageTransition: {
+      name: 'slide-left',
+      mode: 'out-in'
+    }
+  };
 </script>
 
 <style lang="scss">
@@ -139,10 +144,11 @@
         .icons {
           padding: 0 20px;
           flex-wrap: wrap;
+
           .icon {
             padding: 0 5px;
             margin-bottom: 10px;
-            height:36px;
+            height: 36px;
           }
         }
       }

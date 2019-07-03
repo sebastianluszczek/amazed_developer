@@ -117,30 +117,26 @@
       }
 
       .post-content {
-        grid-template-columns: 1fr 1.5fr;
-        height: 190px;
+        grid-template-columns: 1fr 1fr;
 
         .baner {
           width: 100%;
-          height: 100%;
+          height: auto;
           overflow: hidden;
           position: relative;
-
-          .baner-img {
-            /*height: 100%;*/
-          }
         }
 
         .description {
           position: relative;
-          height: 100%;
+          /*height: 100%;*/
+          margin: 0.5rem 1rem 3rem;
 
           .subtitle {
             font-size: 16px;
           }
 
           .tech_icons {
-            bottom: 5px;
+            bottom: 10px;
             right: 5px;
 
             .tech_icon {

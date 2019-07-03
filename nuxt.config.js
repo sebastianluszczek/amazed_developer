@@ -43,6 +43,7 @@ export default {
       { name: "robots", hid: "robots" , content: "index, follow" },
       { name: "twitter:card", content: '/img/og_bgi.jpg' },
       { name: "twitter:site", content: "@AmazedBear" },
+      { name: "theme-color", content: "#333" },
       {
         hid: `og:title`,
         property: 'og:title',

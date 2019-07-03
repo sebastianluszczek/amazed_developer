@@ -7,9 +7,9 @@
           <fa :icon="['fas', 'hamburger']"/>
         </div>
         <ul class="mobile-nav-list" :class="{active: navVisible}" @click="navVisible = !navVisible">
-          <nuxt-link to="/">O mnie</nuxt-link>
-          <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-          <nuxt-link to="/blog">Blog</nuxt-link>
+          <nuxt-link class="mobile_link" to="/">O mnie</nuxt-link>
+          <nuxt-link class="mobile_link" to="/portfolio">Portfolio</nuxt-link>
+          <nuxt-link class="mobile_link" to="/blog">Blog</nuxt-link>
           <AppFooter/>
         </ul>
       </div>
@@ -125,6 +125,10 @@
         margin: 0;
         z-index: 8;
         padding-top: 2rem;
+
+        .mobile_link {
+          font-size: 20px;
+        }
 
         a {
           padding: 20px;

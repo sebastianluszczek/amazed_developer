@@ -16,15 +16,15 @@
 </template>
 
 <script>
-    import AppNav from "@/components/AppNav";
-    import AppFooter from "@/components/AppFooter";
+  import AppNav from "@/components/AppNav";
+  import AppFooter from "@/components/AppFooter";
 
-    export default {
-        components: {
-            AppNav,
-            AppFooter
-        }
-    };
+  export default {
+    components: {
+      AppNav,
+      AppFooter
+    }
+  };
 </script>
 
 
@@ -154,6 +154,7 @@
       main {
 
         position: relative;
+
         .navigation {
           width: 100%;
         }
