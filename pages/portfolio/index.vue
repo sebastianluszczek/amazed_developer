@@ -3,7 +3,7 @@
     <div>
       <h1 class="title">Portfolio</h1>
       <p>Poniżej przedstawiam kilka moich wybranych projektów. Każdy z nich starałem sie opisać w dwóch zdaniach i
-        przedstawić wykożystane technologie. Po kliknięciu na blok znajdziesz dokładniejszy opis, ze zdjęciami oraz
+        przedstawić wykorzystane technologie. Po kliknięciu na blok znajdziesz dokładniejszy opis, ze zdjęciami oraz
         odnośnikami do kodu czy witryny.</p>
 
       <div v-for="(post,key) in projectList" :key="key" class="project-post">

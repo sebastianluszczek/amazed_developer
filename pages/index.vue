@@ -10,7 +10,7 @@
       Postanowiłem nie przywiązywać się jakoś bardzo szczególnie do konkretnych technologi lecz już widzę, że
       zdecydowany prym wiedzie u mnei Vue.js, którego używam na codzień w pracy. Większość moich projektów treningowych
       jak dotąd została wykonana w oparciu o tutoriale, na youtube czy udemy, więc nie dziw się jeśli widziałeś coś
-      podobnego. Za każdym razem jednak staram sie rozszeżyć projekt, dodać kolejne elementy, albo dostosować go do
+      podobnego. Za każdym razem jednak staram sie rozszerzyć projekt, dodać kolejne elementy, albo dostosować go do
       technologi, które znam.</p>
     <div class="stack">
       <p>Technologie front-endowe:</p>
