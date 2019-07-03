@@ -4,8 +4,10 @@
     <p>W tym miejscu będzie pojawiało się coś na zasadzie blogu. Podkreślam, że nie będzie to raczej typowy blog (moze
       kiedyś się w niego przekształci jak nabiorę wprawy). Chciałbym aby były to bardziej notatki niedoświadczonego
       programisty. Sytuacja gdzie szukam po repo projektu, który robiłem bardzo niedawno, bo potrzebuję jakiś jego
-      fragment, zdaża mi sie bardzo często. Stad w tym miejscu mają się znaleźć opisy prostych projektów z informacjami o
-      podejściu, wykożystanych technologiach, fragmentami kodu i odnośnikami do repo lub ciekawych zewnętrznych źródeł wiedzy.</p>
+      fragment, zdaża mi sie bardzo często. Stad w tym miejscu mają się znaleźć opisy prostych projektów z informacjami
+      o
+      podejściu, wykożystanych technologiach, fragmentami kodu i odnośnikami do repo lub ciekawych zewnętrznych źródeł
+      wiedzy.</p>
     <p>Nauczę się czegoś, to tu się to znajdzie :D</p>
 
     <div v-for="(post,key) in bloglist" :key="key" class="blog-post">
@@ -27,17 +29,17 @@
 </template>
 
 <script>
-  export default {
-    name: "blog",
-    computed: {
-      bloglist() {
-        return this.$store.state.bloglist;
-      }
-    },
-    created() {
-      console.log(this.bloglist);
-    }
-  };
+    export default {
+        name: "blog",
+        computed: {
+            bloglist() {
+                return this.$store.state.bloglist;
+            }
+        },
+        created() {
+            console.log(this.bloglist);
+        }
+    };
 </script>
 
 <style lang="scss">
@@ -45,6 +47,7 @@
     .title {
       margin-top: 3rem;
     }
+
     .blog-post {
       margin-top: 30px;
       padding: 20px;

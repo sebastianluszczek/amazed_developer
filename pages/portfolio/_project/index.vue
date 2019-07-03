@@ -1,5 +1,6 @@
 <template>
   <div :key="$route.params.post" class="project-page">
+    <back-arrow :where="'/portfolio'"/>
     <div class="proj-baner">
       <div class="title-half">
         <div class="title">{{ attributes.title }}</div>
@@ -24,6 +25,7 @@
 </template>
 
 <script>
+  import BackArrow from '@/components/BackArrow'
     // Let's require the needed modules
     const fm = require("front-matter");
     var md = require("markdown-it")({
@@ -33,6 +35,9 @@
     }).use(require("markdown-it-highlightjs"), {auto: true});
 
     export default {
+        components: {
+            BackArrow
+        },
         layout: "markdown-blog",
         async asyncData({params}) {
             // We read the markdown file by looking at the `page` parameter
@@ -58,6 +63,7 @@
 
 <style lang="scss">
   .project-page {
+
     .proj-baner {
       width: 100vw;
       display: grid;

@@ -31,17 +31,22 @@
 </template>
 
 <script>
-  export default {
-    name: "portfolio",
-    computed: {
-      projectList() {
-        return this.$store.state.projectlist;
-      }
-    },
-    created() {
-      console.log(this.projectList);
-    }
-  };
+    export default {
+        name: "portfolio",
+        computed: {
+            projectList() {
+                return this.$store.state.projectlist;
+            }
+        },
+        created() {
+            console.log(this.projectList);
+        },
+
+        layoutTransition: {
+            name: 'layout-left',
+            mode: 'out-in'
+        }
+    };
 </script>
 
 <style lang="scss">

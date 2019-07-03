@@ -68,10 +68,7 @@
 
 <script>
   export default {
-    pageTransition: {
-      name: 'slide-left',
-      mode: 'out-in'
-    }
+
   };
 </script>
 
