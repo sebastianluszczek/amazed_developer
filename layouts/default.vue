@@ -32,7 +32,6 @@
     mounted() {
       this.$root.$on('navVisible', (data) => {
         this.navVisible = data;
-        console.log(this.navVisible)
       })
     }
   };
@@ -122,18 +121,6 @@
       .container {
         width: 80%;
         margin: 5rem auto;
-      }
-      .navVisible {
-
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: #33333399;
-        }
       }
     }
 
