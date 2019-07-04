@@ -10,21 +10,32 @@
     </div>
     <main>
       <AppNav/>
-      <nuxt/>
+      <nuxt :class="{navVisible: navVisible}"/>
     </main>
   </div>
 </template>
 
 <script>
-    import AppNav from "@/components/AppNav";
-    import AppFooter from "@/components/AppFooter";
+  import AppNav from "@/components/AppNav";
+  import AppFooter from "@/components/AppFooter";
 
-    export default {
-        components: {
-            AppNav,
-            AppFooter
-        }
-    };
+  export default {
+    components: {
+      AppNav,
+      AppFooter
+    },
+    data() {
+      return {
+        navVisible: false
+      }
+    },
+    mounted() {
+      this.$root.$on('navVisible', (data) => {
+        this.navVisible = data;
+        console.log(this.navVisible)
+      })
+    }
+  };
 </script>
 
 
@@ -102,6 +113,7 @@
       grid-column: 2/3;
       background-color: #fff;
       min-height: 100vh;
+      height: 100%;
 
       .navigation {
         width: calc(100% - 460px);
@@ -110,6 +122,18 @@
       .container {
         width: 80%;
         margin: 5rem auto;
+      }
+      .navVisible {
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #33333399;
+        }
       }
     }
 

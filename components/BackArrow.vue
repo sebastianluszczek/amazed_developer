@@ -11,7 +11,7 @@
 
 <style lang="scss">
   .back_arrow {
-    z-index: 11;
+    z-index: 9;
     cursor: pointer;
     position: fixed;
     top: 8rem;
@@ -40,6 +40,11 @@
       height: 1rem;
       border-bottom: 1px solid #000;
       transform: translate(-3px, -0.5rem);
+    }
+
+    @media screen and (max-width: 420px) {
+      position: absolute;
+      top: 15rem;
     }
   }
 </style>

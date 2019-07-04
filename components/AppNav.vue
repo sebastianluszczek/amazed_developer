@@ -24,20 +24,26 @@
 </template>
 
 <script>
-    import AppLogo from "@/components/AppLogo";
-    import AppFooter from "@/components/AppFooter";
+  import AppLogo from "@/components/AppLogo";
+  import AppFooter from "@/components/AppFooter";
 
-    export default {
-        name: "app_nav",
-        components: {
-            AppLogo, AppFooter
-        },
-        data() {
-            return {
-                navVisible: false
-            }
-        }
-    };
+
+  export default {
+    name: "app_nav",
+    components: {
+      AppLogo, AppFooter
+    },
+    data() {
+      return {
+        navVisible: false
+      }
+    },
+    watch: {
+      navVisible: function (old, nev) {
+        this.$root.$emit('navVisible', old);
+      }
+    }
+  };
 </script>
 
 <style lang="scss">
@@ -52,7 +58,7 @@
     z-index: 10;
     height: 5rem;
     box-shadow: 10px 3px 10px #eee;
-    
+
     .mobile-nav {
       display: none;
     }
@@ -97,13 +103,14 @@
           }
         }
       }
-      
+
       .nav-list {
         display: none;
       }
 
       .mobile-nav {
         display: block;
+
         .hamburger {
           position: fixed;
           top: 20px;
@@ -123,7 +130,7 @@
         transition: .3s;
         height: 100%;
         margin: 0;
-        z-index: 8;
+        z-index: 5;
         padding-top: 2rem;
 
         .mobile_link {
