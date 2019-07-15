@@ -81,7 +81,9 @@
           position: absolute;
           top: 0;
           left: 0;
+          width: 50vw;
           height: 100%;
+          // transform: translateY(-50%);
         }
       }
     }
