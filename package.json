@@ -23,7 +23,7 @@
     "@nuxtjs/markdownit-loader": "^1.1.1",
     "frontmatter-markdown-loader": "^1.7.0",
     "markdown-it-highlightjs": "^3.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.9",
     "sass-loader": "^7.1.0"
   }
